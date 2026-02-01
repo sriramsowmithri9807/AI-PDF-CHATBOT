@@ -17,16 +17,18 @@ export const createServerClient = () => {
     throw new Error('NEXT_PUBLIC_LANGGRAPH_API_URL is not set');
   }
 
-  if (!process.env.LANGCHAIN_API_KEY) {
-    throw new Error('LANGCHAIN_API_KEY is not set');
+  const defaultHeaders: Record<string, string> = {
+    'Content-Type': 'application/json',
+  };
+
+  // Add API key header only if LANGCHAIN_API_KEY is set
+  if (process.env.LANGCHAIN_API_KEY) {
+    defaultHeaders['X-Api-Key'] = process.env.LANGCHAIN_API_KEY;
   }
 
   const client = new Client({
     apiUrl: process.env.NEXT_PUBLIC_LANGGRAPH_API_URL,
-    defaultHeaders: {
-      'Content-Type': 'application/json',
-      'X-Api-Key': process.env.LANGCHAIN_API_KEY,
-    },
+    defaultHeaders,
   });
 
   clientInstance = new LangGraphBase(client);
