@@ -1,13 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
 import { Toaster } from "@/components/ui/toaster"
 
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Learning LangChain Book Chatbot Demo",
-  description: "A chatbot demo based on Learning LangChain (O'Reilly)",
+  title: "AI PDF ChatBot",
+  description: "Chat with your PDFs using AI",
 }
 
 export default function RootLayout({
@@ -16,15 +15,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={GeistSans.className}>
+    <html lang="en" className="dark">
+      <body style={{ fontFamily: "'JetBrains Mono', 'Courier New', monospace" }}>
         {children}
         <Toaster />
       </body>
     </html>
   )
 }
-
-
-
-import './globals.css'
