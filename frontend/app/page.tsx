@@ -271,16 +271,15 @@ export default function Home() {
       {messages.length === 0 ? (
         <>
           <div className="flex-1 flex items-center justify-center">
-            <div className="text-center">
-              <p className="font-medium text-muted-foreground max-w-md mx-auto">
-                This ai chatbot is an example template to accompany the book:{' '}
-                <a
-                  href="https://www.oreilly.com/library/view/learning-langchain/9781098167271/"
-                  className="underline hover:text-foreground"
-                >
-                  Learning LangChain (O'Reilly): Building AI and LLM
-                  applications with LangChain and LangGraph
-                </a>
+            <div className="text-center space-y-6">
+              <h1 className="text-4xl font-bold tracking-tight text-primary">
+                {'> '}<span className="animate-pulse">_</span>
+              </h1>
+              <p className="text-lg text-muted-foreground max-w-md mx-auto font-mono">
+                AI PDF ChatBot
+              </p>
+              <p className="text-sm text-muted-foreground/60 max-w-md mx-auto font-mono">
+                Upload documents. Ask questions. Get answers.
               </p>
             </div>
           </div>
@@ -295,7 +294,7 @@ export default function Home() {
         </div>
       )}
 
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-background">
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border">
         <div className="max-w-5xl mx-auto space-y-4">
           {files.length > 0 && (
             <div className="grid grid-cols-3 gap-2">
@@ -310,7 +309,7 @@ export default function Home() {
           )}
 
           <form onSubmit={handleSubmit} className="relative">
-            <div className="flex gap-2 border rounded-md overflow-hidden bg-gray-50">
+            <div className="flex gap-2 border rounded-md overflow-hidden bg-card">
               <input
                 type="file"
                 ref={fileInputRef}
