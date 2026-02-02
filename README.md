@@ -31,7 +31,7 @@ AI PDF ChatBot is a state-of-the-art Retrieval-Augmented Generation (RAG) applic
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ![Architecture Diagram](docs/images/architecture.png)
 
