@@ -1,5 +1,5 @@
 # AI PDF ChatBot
-
+ 
 <div align="center">
 
 ![AI PDF ChatBot](docs/images/screenshot.png)
