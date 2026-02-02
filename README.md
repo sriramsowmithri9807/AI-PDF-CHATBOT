@@ -21,9 +21,9 @@ AI PDF ChatBot is a state-of-the-art Retrieval-Augmented Generation (RAG) applic
 
 ### Key Features
 
-- **📄 Smart PDF Processing** - Automatically extracts and indexes content from your PDFs
-- **💬 Natural Conversations** - Ask questions in plain English and get intelligent responses
-- **🎯 Context-Aware** - Uses advanced RAG techniques to provide accurate, relevant answers
+- **Smart PDF Processing** - Automatically extracts and indexes content from your PDFs
+- **Natural Conversations** - Ask questions in plain English and get intelligent responses
+- **Context-Aware** - Uses advanced RAG techniques to provide accurate, relevant answers
 - **⚡ Real-time Streaming** - Get responses as they're generated with SSE streaming
 - **🎨 Minimalist UI** - Sleek, terminal-inspired black interface with coding fonts
 - **🔍 Source Citations** - Every answer includes references to the source documents
