@@ -19,7 +19,7 @@
 
 AI PDF ChatBot is a state-of-the-art Retrieval-Augmented Generation (RAG) application that allows you to have intelligent conversations with your PDF documents. Upload any PDF, and ask questions about its content in natural language. The AI understands context, retrieves relevant information, and provides accurate, source-backed answers.
 
-### ✨ Key Features
+### Key Features
 
 - **📄 Smart PDF Processing** - Automatically extracts and indexes content from your PDFs
 - **💬 Natural Conversations** - Ask questions in plain English and get intelligent responses
